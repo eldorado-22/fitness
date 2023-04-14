@@ -1,0 +1,108 @@
+#gallery {
+  .gallery {
+
+    &--service1 {
+      h3 {
+        position: relative;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 32px;
+        top: 50%;
+        z-index: 99;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        text-transform: uppercase;
+
+        //&:hover {
+        //  transform: translateY(1000px);
+        //  background: rgba(0, 0, 0, 0.82);
+        //  transition: .5s;
+        //}
+      }
+
+      &__one {
+        position: relative;
+        filter: blur(2px);
+      }
+    }
+
+    &--service2 {
+      h3 {
+        position: relative;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 32px;
+        top: 50%;
+        z-index: 99;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        text-transform: uppercase;
+
+        //&:hover {
+        //  transform: translateY(1000px);
+        //  background: rgba(0, 0, 0, 0.82);
+        //  transition: .5s;
+        //}
+      }
+
+      &__two {
+        position: relative;
+        filter: blur(2px);
+      }
+    }
+
+    &--service3 {
+      h3 {
+        position: relative;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 32px;
+        top: 50%;
+        z-index: 99;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        text-transform: uppercase;
+
+        //&:hover {
+        //  transform: translateY(1000px);
+        //  background: rgba(0, 0, 0, 0.82);
+        //  transition: .5s;
+        //}
+      }
+
+      &__three {
+        position: relative;
+        filter: blur(2px);
+      }
+    }
+
+    &--service4 {
+      h3 {
+        position: relative;
+        margin-bottom: 0;
+        letter-spacing: 2px;
+        font-size: 32px;
+        top: 50%;
+        z-index: 99;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #ffffff;
+        text-transform: uppercase;
+
+        //&:hover {
+        //  transform: translateY(1000px);
+        //  background: rgba(0, 0, 0, 0.82);
+        //  transition: .5s;
+        //}
+      }
+
+      &__four {
+        position: relative;
+        filter: blur(2px);
+      }
+    }
+  }
+}
