@@ -1,1 +1,1 @@
-# FTNESS 🏋🏻‍♀️
+# FITNESS 🏋🏻‍♀️
