@@ -1,9 +1,23 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import {Link, NavLink} from "react-router-dom";
 
 const Header = () => {
+
+    const [scroll, setScroll] = useState(false)
+
+    const toScroll = () => {
+        setScroll(window.scrollY)
+    }
+
+    useEffect(() =>{
+        window.addEventListener('scroll', toScroll)
+    })
+
     return (
-        <header id="header" className="">
+        <header style={{
+            backdropFilter: scroll > 50 ?  "blur(6px)" : "",
+            background: scroll > 50 ? "rgba(0,0,0,0.73)" : ""
+        }}  id="header" className="">
             <div className="container">
                 <div className="header flex justify-between items-center">
                     <nav className="header--nav">
