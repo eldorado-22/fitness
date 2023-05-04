@@ -31,6 +31,10 @@ a {
     background: url("./assets/images/gymOne.jpg") no-repeat center/cover;
     min-height: 100vh;
 }
+.hero{
+    /*backdrop-filter: blur(2px);*/
+    /*min-height: 100vh;*/
+}
 
 /*BTN*/
 .btn-5 {
@@ -55,7 +59,7 @@ a {
     position: absolute;
     top: 0;
     right: 0;
-    height: 2px;
+    height: 1px;
     width: 0;
     background: #f0094a;
     box-shadow: -1px -1px 5px 0 #fff,
@@ -73,17 +77,19 @@ a {
 
 .btn-5:hover:before,
 .btn-5:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
+    width: 104.30%;
+    transition: 900ms ease all;
 }
 
 /*CIRCLE-LOADER*/
 .circle-loader {
     animation: circle 2s infinite;
 }
-
 @keyframes circle {
     100% {
         transform: rotate(360deg);
     }
 }
+
+
+
