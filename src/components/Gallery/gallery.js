@@ -11,7 +11,7 @@ const Gallery = () => {
             <div className="container">
                 <div className="gallery flex">
                     <div className="gallery--service1">
-                        <img className="gallery--service1__one" src={gymWoman} width={360} alt="img"/>
+                        <img className="gallery--service1__one cursor-pointer" src={gymWoman} width={360} alt="img"/>
                         <div className="gallery--service1__block">
                             <h3 className="text-center">KRUHOVÉ <br/> TRÉNINKY</h3>
                         </div>

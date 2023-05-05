@@ -4,9 +4,11 @@
     &--service1 {
       transition: .5s;
       position: relative;
-      img{
+
+      img {
         display: block;
       }
+
       &__block {
         position: absolute;
         top: 0;
@@ -45,9 +47,11 @@
 
     &--service2 {
       position: relative;
-      img{
+
+      img {
         display: block;
       }
+
       &__block {
         position: absolute;
         top: 0;
@@ -90,9 +94,11 @@
 
     &--service3 {
       position: relative;
-      img{
+
+      img {
         display: block;
       }
+
       &__block {
         position: absolute;
         top: 0;
@@ -108,7 +114,6 @@
           backdrop-filter: blur(9px);
         }
       }
-
 
 
       h3 {
@@ -136,11 +141,13 @@
 
     &--service4 {
       position: relative;
+
       img {
         display: block;
         //width: 100%;
         //height: auto;
       }
+
       &__block {
         position: absolute;
         top: 0;
