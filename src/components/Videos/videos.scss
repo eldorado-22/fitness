@@ -33,7 +33,7 @@
         height: 100%;
         text-align: center;
         overflow: hidden;
-        line-height: 45px;
+        //line-height: 45px;
         transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
@@ -76,10 +76,11 @@
           font-style: italic;
         }
         .ripple{
+
           position: absolute;
           top: 50%;
           left: 50%;
-          width: 110px;
+          width: 90%;
           height: 110px;
           -webkit-transform: translate(-50%, -50%);
           -ms-transform: translate(-50%, -50%);
@@ -110,5 +111,38 @@
         }
       }
     }
+    .frame{
+      display: flex;
+      justify-content: center;
+      //align-items: center;
+      width: 90%;
+      margin: 40px auto;
+      text-align: center;
+    }
+    .frame .btn{
+      padding: 10px 30px;
+      background: red;
+      color: white;
+      font-size: 18px;
+      font-weight: 550;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+
+      &:hover{
+        background: transparent;
+        animation: btn ease-in-out 3s;
+        border: 2px solid red;
+        -webkit-animation: ease-in-out;
+        -webkit-scroll-snap-type: both;
+      }
+    }
+    @keyframes btn {
+      0%{
+        transform: translate(30px, -40px);
+        -webkit-scroll-snap-type: revert;
+      }
+    }
+
   }
 }

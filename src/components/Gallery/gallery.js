@@ -12,30 +12,26 @@ const Gallery = () => {
                 <div className="gallery flex">
                     <div className="gallery--service1">
                         <img className="gallery--service1__one cursor-pointer" src={gymWoman} width={360} alt="img"/>
-                        <div className="gallery--service1__block">
-                            <h3 className="text-center">KRUHOVÉ <br/> TRÉNINKY</h3>
-                        </div>
+                        <h3 className="text-center">KRUHOVÉ <br/> TRÉNINKY</h3>
+                        <div className="gallery--service1__block"></div>
                     </div>
 
-                    <div className="gallery--service2">
-                        <img className="gallery--service2__two" src={man} width={350} alt="img"/>
-                        <div className="gallery--service2__block">
-                            <h3 className="text-center">BOJOVÉ <br/> SPORTY</h3>
-                        </div>
+                    <div className="gallery--service1">
+                        <img className="gallery--service1__two" src={man} width={350} alt="img"/>
+                        <h3 className="text-center">BOJOVÉ <br/> SPORTY</h3>
+                        <div className="gallery--service1__block"></div>
                     </div>
 
-                    <div className="gallery--service3">
-                        <img className="gallery--service3__three" src={service} width={350} alt="img"/>
-                        <div className="gallery--service3__block">
-                            <h3 className="text-center">FITNESS <br/> JUMPING</h3>
-                        </div>
+                    <div className="gallery--service1">
+                        <img className="gallery--service1__three" src={service} width={350} alt="img"/>
+                        <h3 className="text-center">FITNESS <br/> JUMPING</h3>
+                        <div className="gallery--service1__block"></div>
                     </div>
 
-                    <div className="gallery--service4">
-                        <img className="gallery--service4__four" src={services} width={350} alt="img"/>
-                        <div className="gallery--service4__block">
-                            <h3 className="text-center">KARDIO <br/> ZÓNA</h3>
-                        </div>
+                    <div className="gallery--service1">
+                        <img className="gallery--service1__four" src={services} width={350} alt="img"/>
+                        <h3 className="text-center">KARDIO <br/> ZÓNA</h3>
+                        <div className="gallery--service1__block"></div>
                     </div>
                 </div>
             </div>
