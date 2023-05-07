@@ -4,6 +4,21 @@
     &--service1 {
       transition: .5s;
       position: relative;
+      &:hover {
+        .gallery--service1__block{
+          height: 0;
+          transition: .5s;
+          backdrop-filter: blur(9px);
+        }
+        h3{
+          color: white;
+          font-size: 40px;
+          transition: .5s;
+          font-weight: 700;
+        }
+
+      }
+
 
       img {
         display: block;
@@ -16,23 +31,21 @@
         background: rgba(0, 0, 0, 0.7);
         width: 100%;
         height: 100%;
-        opacity: 0;
-
-        &:hover {
-          opacity: 1;
-          transition: .3s;
-          backdrop-filter: blur(9px);
-        }
+        transition: .5s;
       }
 
+
       h3 {
-        position: relative;
+        position: absolute;
         margin-bottom: 0;
         letter-spacing: 2px;
         font-size: 32px;
         top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 99;
         color: transparent;
+        font-weight: 700;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #ffffff;
         text-transform: uppercase;
@@ -40,151 +53,8 @@
 
       &__one {
         position: relative;
-        filter: blur(2px);
       }
 
-    }
-
-    &--service2 {
-      position: relative;
-
-      img {
-        display: block;
-      }
-
-      &__block {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-
-        &:hover {
-          opacity: 1;
-          transition: .3s;
-          backdrop-filter: blur(9px);
-        }
-      }
-
-
-      h3 {
-        margin-bottom: 0;
-        letter-spacing: 2px;
-        font-size: 32px;
-        z-index: 99;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ffffff;
-        text-transform: uppercase;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-      }
-
-      &__two {
-        position: relative;
-        filter: blur(2px);
-      }
-    }
-
-    &--service3 {
-      position: relative;
-
-      img {
-        display: block;
-      }
-
-      &__block {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-
-        &:hover {
-          opacity: 1;
-          transition: .3s;
-          backdrop-filter: blur(9px);
-        }
-      }
-
-
-      h3 {
-        margin-bottom: 0;
-        letter-spacing: 2px;
-        font-size: 32px;
-        z-index: 99;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ffffff;
-        text-transform: uppercase;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-      }
-
-      &__three {
-        position: relative;
-        filter: blur(1.5px);
-      }
-    }
-
-    &--service4 {
-      position: relative;
-
-      img {
-        display: block;
-        //width: 100%;
-        //height: auto;
-      }
-
-      &__block {
-        position: absolute;
-        top: 0;
-        left: 0;
-        background: rgba(0, 0, 0, 0.7);
-        width: 100%;
-        height: 100%;
-        opacity: 0;
-
-        &:hover {
-          opacity: 1;
-          transition: .3s;
-          backdrop-filter: blur(9px);
-        }
-      }
-
-      h3 {
-        margin-bottom: 0;
-        letter-spacing: 2px;
-        font-size: 32px;
-        z-index: 99;
-        color: transparent;
-        -webkit-text-stroke-width: 1px;
-        -webkit-text-stroke-color: #ffffff;
-        text-transform: uppercase;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
-      }
-
-      &__four {
-        position: relative;
-        filter: blur(1.5px);
-      }
     }
   }
 }
