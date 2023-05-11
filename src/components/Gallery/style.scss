@@ -4,19 +4,20 @@
     &--service1 {
       transition: .5s;
       position: relative;
+
       &:hover {
-        .gallery--service1__block{
+        .gallery--service1__block {
           height: 0;
           transition: .5s;
           backdrop-filter: blur(9px);
         }
-        h3{
+
+        h3 {
           color: white;
-          font-size: 40px;
+          font-size: 54px;
           transition: .5s;
           font-weight: 700;
         }
-
       }
 
 
