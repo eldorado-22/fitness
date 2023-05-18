@@ -1,7 +1,8 @@
 #photos {
   .photos {
-
-
+    img{
+      border-radius: 10px;
+    }
     .card {
       width: 200px;
       height: 250px;
@@ -43,11 +44,7 @@
       backface-visibility: hidden;
       //box-shadow: 0 5px 10px
       //rgba(0, 0, 0, 0.15);
-    }
-
-    .card__image {
-      backdrop-filter: blur(5px);
-      background: rgba(0, 0, 0, 0.68);
+      border-radius: 10px;
     }
 
     .card__side--back {

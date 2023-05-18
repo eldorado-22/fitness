@@ -1,0 +1,15 @@
+#footer {
+
+  .footer {
+    .img {
+      filter: blur(2px);
+      transition: .5s;
+
+      &:hover{
+        filter: none;
+        background: rgba(0, 0, 0, 0.43);
+        transition: .5s;
+      }
+    }
+  }
+}
