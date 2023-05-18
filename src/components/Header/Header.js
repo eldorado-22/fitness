@@ -1,9 +1,13 @@
 import React, {useEffect, useState} from 'react';
-import {Link, NavLink} from "react-router-dom";
+import "./style.scss";
+import {Link} from "react-router-dom";
+import BurgerMenu from "../Burger-Menu/menu";
+import {BiMenuAltLeft} from "react-icons/bi";
 
 const Header = () => {
 
     const [scroll, setScroll] = useState(false)
+    const [burger, setBurger] = useState(false)
 
     const toScroll = () => {
         setScroll(window.scrollY)
@@ -16,10 +20,15 @@ const Header = () => {
     return (
         <header style={{
             backdropFilter: scroll > 50 ?  "blur(6px)" : "",
-            background: scroll > 50 ? "rgba(0,0,0,0.73)" : ""
-        }}  id="header" className="">
+            background: scroll > 50 ? "rgba(0,0,0,0.73)" : "",
+        }}  id="header">
+            <BurgerMenu burger={burger} setBurger={setBurger} style={{
+                background: "white",
+                zIndex: "999"
+            }}/>
             <div className="container">
                 <div className="header flex justify-between items-center">
+                    <BiMenuAltLeft className='header--menu' onClick={() => setBurger(true)}/>
                     <nav className="header--nav">
                         <Link to={"/"}>
                             <a href="#" className="text text-xl text-amber-50">Home</a>
@@ -32,9 +41,8 @@ const Header = () => {
                         </Link>
                     </nav>
                     <img className="w-[8%] object-cover"
-                         src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"/>
-                    {/*<h1>GYM</h1>*/}
-                    {/*<h1 className="text text-3xl bg-gradient-to-r from-blue-400">Maximum</h1>*/}
+                         src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"
+                    />
                     <nav className="header--nav">
                         <Link to={'/pool'}>
                             <a href="#" className="text  text-xl text-amber-50">Pool</a>
@@ -48,6 +56,7 @@ const Header = () => {
                     </nav>
                 </div>
             </div>
+
         </header>
     );
 };
