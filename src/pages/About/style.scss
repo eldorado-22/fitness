@@ -1,0 +1,16 @@
+#about {
+  background: url("./../../assets/images/manGyn.webp") no-repeat center/cover;
+  min-height: 70vh;
+  //filter: blur(5px);
+  -webkit-box-shadow: 0 5px 100px 600px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 0 5px 100px 600px rgba(0, 0, 0, 0.64) inset;
+  box-shadow: 0 5px 10px 600px rgba(0, 0, 0, 0.65) inset;
+  .about {
+    h1{
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: #d2cece;
+      text-transform: uppercase;
+    }
+  }
+}
