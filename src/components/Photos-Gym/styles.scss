@@ -8,24 +8,20 @@
       height: 250px;
       perspective: 400px;
     }
-
     .card img {
       width: 100%;
       backdrop-filter: blur(5px);
       background: rgba(0, 0, 0, 0.56);
     }
-
     .card__inner {
       position: relative;
       height: 100%;
       transform-style: preserve-3d;
       transition: transform 0.5s;
     }
-
     .card:hover .card__inner {
       transform: rotateY(-180deg);
     }
-
     .card__body {
       display: flex;
       justify-content: space-between;
@@ -34,7 +30,6 @@
       cursor: pointer;
 
     }
-
     .card__side {
       position: absolute;
       inset: 0;
@@ -46,7 +41,6 @@
       //rgba(0, 0, 0, 0.15);
       border-radius: 10px;
     }
-
     .card__side--back {
       transform: rotateY(180deg);
     }
