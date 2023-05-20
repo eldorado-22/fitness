@@ -41,7 +41,7 @@ const Header = () => {
                         </Link>
                     </nav>
                     {/*<NavLink to={"/"}>*/}
-                        <img className="w-[8%] object-cover"
+                        <img className="w-[15%] object-cover pl-14"
                              src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"
                         />
                     {/*</NavLink>*/}

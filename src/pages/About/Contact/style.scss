@@ -1,0 +1,37 @@
+#contact {
+  .contact {
+    h1 {
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #d2cece;
+      text-transform: uppercase;
+    }
+
+    pre {
+      -webkit-text-stroke-width: 0.6px;
+      -webkit-text-stroke-color: #aab2a2;
+    }
+
+    &--nav {
+      padding: 20px 0;
+
+      &__icons {
+        -webkit-text-stroke-width: 0.6px;
+        -webkit-text-stroke-color: #aab2a2;
+        filter: drop-shadow(1px 2px 7px #fff);
+        transition: .5s;
+
+        &:hover {
+          transform: scaleX(1.1);
+          transition: .5s;
+        }
+      }
+
+      &__stick {
+        width: 3px;
+        height: 270px;
+        background: red;
+      }
+    }
+
+  }
+}

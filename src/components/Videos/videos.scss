@@ -126,13 +126,14 @@
       font-size: 18px;
       font-weight: 550;
       border-radius: 8px;
-      border: none;
       outline: none;
+      border: 2px solid red;
+      transition: .5s;
+
 
       &:hover{
         background: transparent;
         animation: btn ease-in-out 3s;
-        border: 2px solid red;
         -webkit-animation: ease-in-out;
         -webkit-scroll-snap-type: both;
       }

@@ -1,5 +1,5 @@
 import React from 'react';
-// import "./style.scss";
+import "./style.scss";
 import "./../../../components/Photos-Gym/styles.scss"
 import photoSix from "../../../assets/images/gallery6.jpg";
 import photoEleven from "../../../assets/images/gallery12.jpg";
@@ -16,7 +16,7 @@ const AboutPhotoGYM = () => {
     return (
         <div id="photos">
             <div className="container">
-                <h2 className="text-gray-50 text-6xl text-center ">Photos <span className="font-bold text-red-700 py-3">GYM</span></h2>
+                <h1 className="text-red-700 text-6xl text-center font-extrabold pb-10">Photos <span className="font-bold text-red-700 py-3">GYM</span></h1>
                 <div className="photos py-3">
                     <div className=" flex  justify-between items-center">
                         <article className="card">
