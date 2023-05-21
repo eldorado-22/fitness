@@ -35,7 +35,6 @@
         transition: .5s;
       }
 
-
       h3 {
         transition: .5s;
         position: absolute;
@@ -69,8 +68,8 @@
 @media (max-width: 1041px) {
   #gallery {
     .gallery {
-      &--service1{
-        &__one{
+      &--service1 {
+        &__one {
           width: 100%;
         }
       }
@@ -81,10 +80,43 @@
 @media (max-width: 951px) {
   #gallery {
     .gallery {
-      &--service1{
-        width: 200%;
+      &--service1 {
+        width: 50%;
 
-        &__one{
+        &__one {
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 671px) {
+  #gallery {
+    .gallery {
+      &--service1 {
+        &:hover {
+          h3 {
+            font-size: 44px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 551px) {
+  #gallery {
+    .gallery {
+      &--service1 {
+        width: 100%;
+        &:hover {
+          h3 {
+            font-size: 60px;
+          }
+        }
+
+        h3 {
+          font-size: 45px;
         }
       }
     }

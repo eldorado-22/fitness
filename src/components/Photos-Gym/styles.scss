@@ -7,6 +7,7 @@
       width: 200px;
       height: 250px;
       perspective: 400px;
+
     }
     .card img {
       width: 100%;
@@ -43,6 +44,26 @@
     }
     .card__side--back {
       transform: rotateY(180deg);
+    }
+  }
+}
+@media (max-width: 472px) {
+  #photos {
+    .photos {
+      &__block{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+      }
+      .card {
+        gap: 30px;
+        width: 100%;
+      }
+      img {
+        height: 30vh;
+        object-fit: cover;
+      }
     }
   }
 }
