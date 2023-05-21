@@ -24,7 +24,7 @@ const PhotosGym = () => {
                     <h1 className="text-center text-6xl text-white py-20">Photo
                         <span className="text-red-700 font-bold"> GYM</span>
                     </h1>
-                    <div className="flex  justify-between items-center">
+                    <div className="photos__block flex  justify-between flex-wrap gap-5 items-center">
                         <article className="card">
                             <div className="card__inner">
                                 <div className="card__side card__side--front">
@@ -126,7 +126,7 @@ const PhotosGym = () => {
                             </div>
                         </article>
                     </div>
-                    <div className="photos__block  py-10 flex  justify-between items-center">
+                    <div className="photos__block  py-10 flex flex-wrap gap-5  justify-between items-center">
                         <article className="card">
                             <div className="card__inner">
                                 <div className="card__side card__side--front">

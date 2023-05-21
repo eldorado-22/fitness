@@ -8,6 +8,7 @@ import Trainer from "./pages/Tarainer/trainer";
 import Services from "./pages/Services/services";
 import AboutUS from "./pages/About";
 import Contact from "./pages/About/Contact/Contact";
+import SignInUp from "./pages/Registr/sign-in-up";
 
 function App() {
     return (
@@ -19,8 +20,9 @@ function App() {
                 <Route path={"/pool"} element={<Pool/>}/>
                 <Route path={"/services"} element={<Services/>}/>
                 <Route path={"/trainer"} element={<Trainer/>}/>
-                <Route path={"/contact"} element={<Contact/>}/>
+                <Route path={"/registration"} element={<SignInUp/>}/>
             </Routes>
+            {/*<SignInUp/>*/}
             <Footer/>
         </>
     );
