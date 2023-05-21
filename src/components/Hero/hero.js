@@ -28,7 +28,7 @@ const Hero = () => {
                    <p className="text-2xl text-opacity-70 text-amber-50 text-center py-7">Lorem ipsum dolor sit amet. Accusantium assumenda eum
                        facilis harum, <br/> laboriosam molestias nobis. Magnam, sequi similique?
                    </p>
-                    <button className="custom-btn btn-5 outline-none"><span>Sign Up</span></button>
+                    {/*<button className="custom-btn btn-5 outline-none"><span>Sign Up</span></button>*/}
                 </div>
             </div>
         </section>
