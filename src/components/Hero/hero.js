@@ -17,11 +17,8 @@ const Hero = () => {
                 <div style={{
                     backdropFilter: "blur(2px)",
                     minHeight: "100vh"
-                }} className="hero pt-[20%] filter-[1px] flex  items-center flex-col">
-                    <div className="">
-
-                    </div>
-                    <img className="w-[17%] py-8 flex justify-center" src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"/>
+                }} className="hero pt-[14%] filter-[1px] flex  items-center flex-col">
+                    <img className="w-[17%] pb-10 flex justify-center" src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"/>
                     <h1 className="text text-7xl text-amber-50 text-center">Welcome To
                         <span className="text text-red-600"> GYM FITNESS</span>
                     </h1>

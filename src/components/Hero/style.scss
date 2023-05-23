@@ -5,3 +5,13 @@
 
   }
 }
+@media (max-width: 993px) {
+  #hero {
+    .hero{
+      padding: 9em 0;
+      img {
+        display: none;
+      }
+    }
+  }
+}
