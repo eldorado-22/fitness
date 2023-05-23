@@ -9,8 +9,8 @@ const Footer = () => {
             <div className="container">
                 <div className="footer">
                     <img className="w-[20%] pb-7 object-cover flex m-auto"
-                         src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"
-                    />
+                         src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"/>
+
                     <div className="flex justify-around items-center">
                         <div className="footer--nav  items-center ">
                             <div className="footer--nav__group py-6">
@@ -33,7 +33,6 @@ const Footer = () => {
                                 <a href="#" className="text-gray-500 text-xl py-3">jumashevv992@gmail.com</a>
                             </div>
                         </div>
-
                         <div className="footer--nav flex  items-center ">
                             <div className="footer--nav__group ">
                                 <h4 className="text-white text-3xl">Social Networking</h4>
@@ -63,14 +62,13 @@ const Footer = () => {
                                 </a>
 
                             </div>
-
                         </div>
-
                         <div className="img">
                             <img src="https://fitnessluka.cz/templates/Default/images/background/2.jpg" alt="img"
                                  width={500}/>
                         </div>
                     </div>
+
                 </div>
             </div>
         </footer>

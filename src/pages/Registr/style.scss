@@ -1,7 +1,206 @@
-#registration{
+#signUp {
   background: url("./../../assets/images/gymTwo.webp") no-repeat center/cover;
-  min-height: 100vh;
-  .registration{
+  height: 100vh;
+  -webkit-box-shadow: 0 5px 100px 600px rgba(0, 0, 0, 0.78) inset;
+  -moz-box-shadow: 0 5px 100px 600px rgba(0, 0, 0, 0.78) inset;
+  box-shadow: 0 5px 10px 600px rgba(0, 0, 0, 0.78) inset;
+  width: 100%;
+  position: fixed;
+  z-index: 999;
 
+  .signUp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+
+    &--form {
+      width: 40%;
+      padding: 10% 30px;
+      backdrop-filter: blur(5px);
+
+      h2 {
+        font-weight: 500;
+        font-size: 23px;
+        margin-top: 20px;
+      }
+
+      &__block {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        //width: 100%;
+        margin: 10px 0;
+        background: rgba(224, 222, 221, 0.12);
+
+        &--icon {
+          font-size: 30px;
+          margin: 0 20px;
+          color: #FFFFFF;
+        }
+
+        input {
+          width: 100%;
+          background: transparent;
+          border: none;
+          font-weight: 400;
+          font-size: 17px;
+          color: rgba(255, 255, 255, 0.85);
+          padding: 20px 0;
+          outline: none;
+        }
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 15px 100px;
+      border: none;
+      font-weight: 600;
+      margin: 30px 0;
+      font-size: 25px;
+      color: #FAF9F9;
+      background: #F86D3B;
+      border-radius: 15px;
+      outline: none;
+
+    }
+
+    &--or {
+      margin-top: 30px;
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font-weight: 500;
+        font-size: 25px;
+      }
+
+      div {
+        width: 40%;
+        height: 2px;
+        background: rgba(231, 224, 224, 0.6);
+      }
+    }
+
+    &--links {
+      margin: 40px 0 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%;
+      font-size: 40px;
+
+      &__face {
+        color: rgba(30, 30, 217, 0.93);
+      }
+
+      &__github {
+        color: #f3f3f3;
+      }
+    }
+
+    h4 {
+      font-weight: 400;
+      font-size: 15px;
+      margin: 40px 0;
+      color: #999999;
+
+      span {
+        font-weight: 400;
+        font-size: 15px;
+        color: #F86D3B;
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 1201px) {
+  #signUp {
+    .signUp {
+      &--form {
+        width: 60%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1001px) {
+  #signUp {
+    .signUp {
+      &--form {
+        width: 70%;
+      }
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  #signUp {
+    .signUp {
+      &--form {
+        width: 80%;
+      }
+    }
+  }
+}
+
+@media (max-width: 601px) {
+  #signUp {
+    max-width: 100%;
+    height: 100vh;
+    .signUp {
+      &--form {
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 501px) {
+  #signUp {
+    width: 100%;
+    height: 100vh;
+    .signUp {
+      &--form {
+        width: 110%;
+      }
+    }
+  }
+}
+
+@media (max-width: 401px) {
+  #signUp {
+    .signUp {
+      &--form {
+        width: 115%;
+      }
+    }
+  }
+}
+@media (max-width: 376px) {
+  #signUp {
+    .signUp {
+      &--form {
+        width: 116%;
+      }
+    }
+  }
+}
+@media (max-width: 321px) {
+  #signUp {
+    .signUp {
+      &--form {
+        width: 118%;
+      }
+    }
   }
 }

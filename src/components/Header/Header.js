@@ -2,12 +2,11 @@ import React, {useEffect, useState} from 'react';
 import "./style.scss";
 import {Link} from "react-router-dom";
 // import BurgerMenu from "../Burger-Menu/menu";
-import {RxHamburgerMenu} from "react-icons/rx";
 
 const Header = () => {
 
     const [scroll, setScroll] = useState(false)
-    const [burger, setBurger] = useState(false)
+    // const [burger, setBurger] = useState(false)
 
     const toScroll = () => {
         setScroll(window.scrollY)
@@ -25,7 +24,12 @@ const Header = () => {
 
             <div className="container">
                 <div className="header flex justify-between items-center">
-                    <nav className="header--nav">
+                  {/*<a href="/">*/}
+                      <img className="w-[15%] object-cover pl-14"
+                           src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"
+                      />
+                  {/*</a>*/}
+                    <nav className="header--nav flex">
                         <Link to={"/"}>
                             <a href="#" className="text text-xl text-amber-50">Home</a>
                         </Link>
@@ -45,12 +49,6 @@ const Header = () => {
                             <a href="#" className="text text-xl text-amber-50">Registration</a>
                         </Link>
                     </nav>
-                    {/*<NavLink to={"/"}>*/}
-                    {/*<img className="w-[15%] object-cover pl-14"*/}
-                    {/*     src="https://fitnessluka.cz/templates/Default/images/animated-logo.svg" alt="img"*/}
-                    {/*/>*/}
-                    {/*</NavLink>*/}
-
                 </div>
                 <div className="burger ">
                     <div className="burger-item "></div>
