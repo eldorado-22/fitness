@@ -66,11 +66,11 @@ const SignUp = () => {
                             <ImFacebook className='signUp--links__face'/>
                             <FaGithub className='signUp--links__github'/>
                         </div>
-                        <Link to={"/"}>
+                        {/*<Link to={"/"}>*/}
                             <button onClick={() => name !== '' && gmail !== '' && password !== '' ?
                                 addAccount(newAcc) : setNotVal(true)}> Continue
                             </button>
-                        </Link>
+                        {/*</Link>*/}
                     </div>
 
 
