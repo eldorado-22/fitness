@@ -1,7 +1,7 @@
 import React from 'react';
 import "./videos.scss";
 import videosImg from "../../assets/images/video-img-3.jpg"
-import playIcon from "../../assets/images/play-icon.png"
+import {BsPlayFill} from "react-icons/bs";
 
 const Videos = () => {
     return (
@@ -24,11 +24,11 @@ const Videos = () => {
                                  className="mCS_img_loaded"/>
                         </figure>
 
-                        <a href="https://youtu.be/ZKxGhp0PR6Q" className="lightbox-image overlay-box">
-                            <span>
-                                <img src={playIcon} alt="apollon" className="mCS_img_loaded"/>
-                                <i className="ripple"></i>
-                            </span>
+                        <a href="https://youtu.be/ZKxGhp0PR6Q" target="_blank"
+                           className="lightbox-image overlay-box">
+                          <div className="videos--video-box--fit">
+                              <BsPlayFill className="plays"/>
+                          </div>
                         </a>
                     </div>
 
