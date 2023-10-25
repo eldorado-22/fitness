@@ -3,8 +3,7 @@
 <h3> My GitHub [Here] (https://github.com/eldorado-22/). </h3>
 
 
-# From || Eldorado.JM
-#
+# From || Eldar Jumashev
 # My Social Media Network 👇🏻 <br/>
 <h2> My instagram:  https://www.instagram.com/eldar_jumashevv/ </h2>
 <h2> My Facebook: https://www.facebook.com/eldoradojumashevv/ </h2>
