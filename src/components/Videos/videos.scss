@@ -1,31 +1,64 @@
-#videos{
-  .videos{
-    h1{
+#videos {
+  .videos {
+    h1 {
       color: transparent;
       -webkit-text-stroke-width: 2px;
       -webkit-text-stroke-color: #d2cece;
       text-transform: uppercase;
 
-      span{
+      span {
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #ff0000;
       }
     }
-    &--video-box{
+
+    &--video-box {
       position: relative;
 
+      &--fit {
+        position: absolute;
+        border-radius: 50%;
+        left: 46%;
+        top: 46%;
+        z-index: 99;
+        width: 100px;
+        height: 100px;
+        background: rgba(250, 247, 247, 0.35);
+        display: grid;
+        place-content: center;
+        animation: plays 3s infinite ease-in-out;
+        box-shadow: 1px 1px 10px #ff0000;
+        transition: .5s;
 
-      .video-image{
+      }
+      @keyframes plays {
+        0%{
+          transform: scale(1.23);
+          transition: .5s;
+        }
+      }
+      .plays{
+        color: white;
+        font-size: 45px;
+
+      }
+
+      .video-image {
         position: relative;
         margin: 0;
         border: 1px solid #f8f9fa;
+        border-radius: 3px;
       }
-      .video-image img{
+
+      .video-image img {
         position: relative;
         width: 100%;
         z-index: 3;
+        border-radius: 3px;
+
       }
-      .overlay-box{
+
+      .overlay-box {
         position: absolute;
         left: 0;
         top: 0;
@@ -37,7 +70,8 @@
         transition: all 0.3s ease;
         -moz-transition: all 0.3s ease;
         -webkit-transition: all 0.3s ease;
-        &:before{
+
+        &:before {
           position: absolute;
           content: '';
           left: 0;
@@ -45,10 +79,10 @@
           right: 0;
           bottom: 0;
           z-index: 10;
-          background-color: rgba(0,0,0,0.50);
+          background-color: rgba(0, 0, 0, 0.50);
         }
 
-        span{
+        span {
           position: absolute;
           width: 110px;
           height: 110px;
@@ -70,12 +104,14 @@
           -webkit-transition: all 900ms ease;
           -ms-transition: all 900ms ease;
           -o-transition: all 900ms ease;
-          background-color: rgba(255,255,255,0.20);
+          background-color: rgba(255, 255, 255, 0.20);
         }
-        i{
+
+        i {
           font-style: italic;
         }
-        .ripple{
+
+        .ripple {
 
           position: absolute;
           top: 50%;
@@ -91,7 +127,8 @@
           box-shadow: 0 0 0 0 rgba(255, 255, 255, .6);
           -webkit-animation: ripple 3s infinite;
           animation: ripple 3s infinite;
-          &:before{
+
+          &:before {
             position: absolute;
             top: 50%;
             left: 50%;
@@ -99,7 +136,8 @@
             height: 110px;
             transform: translate(-50%, -50%);
           }
-          &:after{
+
+          &:after {
             animation-delay: .6s;
             content: "";
             position: absolute;
@@ -111,7 +149,8 @@
         }
       }
     }
-    .frame{
+
+    .frame {
       display: flex;
       justify-content: center;
       //align-items: center;
@@ -119,7 +158,8 @@
       margin: 40px auto;
       text-align: center;
     }
-    .frame .btn{
+
+    .frame .btn {
       padding: 10px 30px;
       background: red;
       color: white;
@@ -131,15 +171,16 @@
       transition: .5s;
 
 
-      &:hover{
+      &:hover {
         background: transparent;
         animation: btn ease-in-out 3s;
         -webkit-animation: ease-in-out;
         -webkit-scroll-snap-type: both;
       }
     }
+
     @keyframes btn {
-      0%{
+      0% {
         transform: translate(30px, -40px);
         -webkit-scroll-snap-type: revert;
       }

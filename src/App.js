@@ -7,7 +7,8 @@ import Pool from "./pages/Pool/pool";
 import Trainer from "./pages/Tarainer/trainer";
 import Services from "./pages/Services/services";
 import AboutUS from "./pages/About";
-import SignInUp from "./pages/Registr/sign-in-up";
+// import SignInUp from "./pages/Registr/sign-in-up";
+import Form from "./pages/Registr/sign-in-up";
 
 function App() {
     return (
@@ -19,7 +20,7 @@ function App() {
                 <Route path={"/pool"} element={<Pool/>}/>
                 <Route path={"/services"} element={<Services/>}/>
                 <Route path={"/trainer"} element={<Trainer/>}/>
-                <Route path={"/registration"} element={<SignInUp/>}/>
+                <Route path={"/registration"} element={<Form/>}/>
             </Routes>
             <Footer/>
         </>
