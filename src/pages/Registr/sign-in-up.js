@@ -83,64 +83,66 @@ const Form = () => {
         }
     }
     return (
-        <section id='signUp'>
-            <div className="container">
-                <div className="signUp">
-                    <div className="signUp--form py-20">
-                        <form className="signUp--form__search">
-                            <h1>Registration</h1>
+       <>
+           <section id='signUp'>
+               <div className="container">
+                   <div className="signUp">
+                       <div className="signUp--form py-20">
+                           <form className="signUp--form__search">
+                               <h1>Registration</h1>
 
-                            <div className="search">
-                                {(nameDirty && nameDirty) && <div style={{
-                                    color: "red"
-                                }}>{nameError}</div>}
-                                <input style={{
-                                    border: nameDirty && password === "" ? "1px solid red" : "",
-                                    outline: nameDirty && password === "" ? "1px solid red" : "",
-                                }} onChange={e => nameHandler(e)}
-                                       type="text" name="name" placeholder="Enter you name..."
-                                       value={name}
-                                       onBlur={e => blurHandler(e)}
-                                />
-                                <h4 className="emails">
-                                    {(emailDirty && emailError) && <div style={{
-                                        color: "red"
-                                    }}>{emailError}</div>}
-                                </h4>
-                                <input style={{
-                                    border: emailDirty && password === "" ? "1px solid red" : "",
-                                    outline: emailDirty && password === "" ? "1px solid red" : "",
-                                }} onChange={e => emailHandler(e)}
-                                       value={email}
-                                       onBlur={e => blurHandler(e)}
-                                       type="email" name="email"
-                                       placeholder="Enter you email..."/>
-                                <h4 className="emails">
-                                    {(passwordError && passwordDirty) && <div style={{
-                                        color: "red"
-                                    }}>{passwordError}</div>}
-                                </h4>
-                                <input style={{
-                                    border: passwordDirty && email === "" ? "1px solid red" : "",
-                                    outline: passwordDirty && email === "" ? "1px solid red" : ""
-                                }} onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)}
-                                       type="password" name="password"
-                                       placeholder="Enter you password..."/>
-                                <button onChange={e => emailHandler(e)} type="submit">Registration</button>
-                            </div>
-                        </form>
-                    </div>
+                               <div className="search">
+                                   {(nameDirty && nameDirty) && <div style={{
+                                       color: "red"
+                                   }}>{nameError}</div>}
+                                   <input style={{
+                                       border: nameDirty && password === "" ? "1px solid red" : "",
+                                       outline: nameDirty && password === "" ? "1px solid red" : "",
+                                   }} onChange={e => nameHandler(e)}
+                                          type="text" name="name" placeholder="Enter you name..."
+                                          value={name}
+                                          onBlur={e => blurHandler(e)}
+                                   />
+                                   <h4 className="emails">
+                                       {(emailDirty && emailError) && <div style={{
+                                           color: "red"
+                                       }}>{emailError}</div>}
+                                   </h4>
+                                   <input style={{
+                                       border: emailDirty && password === "" ? "1px solid red" : "",
+                                       outline: emailDirty && password === "" ? "1px solid red" : "",
+                                   }} onChange={e => emailHandler(e)}
+                                          value={email}
+                                          onBlur={e => blurHandler(e)}
+                                          type="email" name="email"
+                                          placeholder="Enter you email..."/>
+                                   <h4 className="emails">
+                                       {(passwordError && passwordDirty) && <div style={{
+                                           color: "red"
+                                       }}>{passwordError}</div>}
+                                   </h4>
+                                   <input style={{
+                                       border: passwordDirty && email === "" ? "1px solid red" : "",
+                                       outline: passwordDirty && email === "" ? "1px solid red" : ""
+                                   }} onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)}
+                                          type="password" name="password"
+                                          placeholder="Enter you password..."/>
+                                   <button onChange={e => emailHandler(e)} type="submit">Registration</button>
+                               </div>
+                           </form>
+                       </div>
 
-                    <Link to={"/"}>
-                        <button onClick={() => name !== '' && email !== '' && password !== '' ?
-                            addAccount(newAcc) : setNotVal(true)}> Continue
-                        </button>
-                    </Link>
+                       <Link to={"/"}>
+                           <button onClick={() => name !== '' && email !== '' && password !== '' ?
+                               addAccount(newAcc) : setNotVal(true)}> Continue
+                           </button>
+                       </Link>
 
 
-                </div>
-            </div>
-        </section>
+                   </div>
+               </div>
+           </section>
+       </>
     );
 };
 

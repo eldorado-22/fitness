@@ -7,7 +7,6 @@ import Pool from "./pages/Pool/pool";
 import Trainer from "./pages/Tarainer/trainer";
 import Services from "./pages/Services/services";
 import AboutUS from "./pages/About";
-// import SignInUp from "./pages/Registr/sign-in-up";
 import Form from "./pages/Registr/sign-in-up";
 
 function App() {
