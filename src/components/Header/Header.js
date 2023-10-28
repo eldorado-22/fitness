@@ -18,8 +18,9 @@ const Header = () => {
 
     return (
         <header style={{
-            backdropFilter: scroll > 50 ? "blur(6px)" : "",
+            backdropFilter: scroll > 50 ? "blur(4px)" : "",
             background: scroll > 50 ? "rgba(0,0,0,0.73)" : "",
+            transition: scroll > 50 ? ".5s" : ""
         }} id="header">
 
             <div className="container">

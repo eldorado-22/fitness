@@ -1,0 +1,35 @@
+@mixin titles {
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #d2cece;
+  text-transform: uppercase;
+}
+@mixin titlesTwo {
+  color: gray;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
+  text-transform: uppercase;
+}
+@mixin stroke{
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: gray;
+  text-align: center;
+}
+@mixin  bg_img{
+  -webkit-box-shadow: 0 5px 100px 600px rgba(0, 0, 0, 0.6) inset;
+  -moz-box-shadow: 0 5px 100px 600px rgba(0, 0, 0, 0.64) inset;
+  box-shadow: 0 5px 10px 600px rgba(0, 0, 0, 0.65) inset;
+}
+@mixin pool_position{
+  object-fit: cover;
+  border-radius: 8px;
+  height: 40vh;
+  width: 50vh;
+}
+@mixin mistakes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  font-size: 21px;
+}

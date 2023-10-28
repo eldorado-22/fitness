@@ -1,0 +1,14 @@
+@import "./../../../styles/mixin";
+
+#pool{
+    background: url("../../../assets/images/swim_pool.jpg") no-repeat center/cover fixed;
+    min-height: 70vh;
+   @include bg_img;
+
+    .pool{
+        h1{
+            @include titles;
+        }
+    }
+
+}

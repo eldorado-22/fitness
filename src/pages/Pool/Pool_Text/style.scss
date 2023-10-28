@@ -1,0 +1,16 @@
+#pool-text {
+  .pool-text {
+    &--icons {
+      position: relative;
+
+      &__arrow {
+        position: absolute;
+        z-index: 999;
+        top: 85.80%;
+        left: 49.40%;
+        color: white;
+        font-size: 20px;
+      }
+    }
+  }
+}

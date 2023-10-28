@@ -6,14 +6,16 @@ import Videos from "../Videos/videos";
 import PhotosGym from "../Photos-Gym/photos-gym";
 
 const Home = () => {
+    window.scroll(0, 0)
+
     return (
-        <div>
+        <>
             <Hero/>
             <Circle/>
             <Gallery/>
             <Videos/>
             <PhotosGym/>
-        </div>
+        </>
     );
 };
 
