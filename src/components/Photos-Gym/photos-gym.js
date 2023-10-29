@@ -11,12 +11,21 @@ import photoEight from "./../../assets/images/gallery7.jpg"
 import photoNine from "./../../assets/images/gallery9.jpg"
 import photoTen from "./../../assets/images/gallery10.jpg"
 import photoEleven from "./../../assets/images/gallery12.jpg"
-import {NavLink} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 // import {BsPlusLg} from "react-icons/bs";
 
 
 const PhotosGym = () => {
     // const [modal, setModal] = useState(false)
+    const navigate = useNavigate()
+
+    function goToAbout(){
+        navigate('/about')
+        setTimeout(()=> {
+            window.scroll(0,950)
+        },50)
+    }
+
     return (
         <section id="photos">
             <div className="container">
@@ -40,7 +49,8 @@ const PhotosGym = () => {
                                     <div className="card__body">
                                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
                                             repellat
-                                            voluptates.</p>
+                                            voluptates.
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -218,9 +228,7 @@ const PhotosGym = () => {
                             </div>
                         </article>
                     </div>
-                    <NavLink to={"/about"}>
-                        <button className="rounded-full ... p-3 hover:bg-white hover:text-black transition-opacity outline-none text-xl bg-red-800 text-white flex m-auto ">Others Photo</button>
-                    </NavLink>
+                    <button onClick={()=> goToAbout()} className="rounded-full ... p-3 hover:bg-white hover:text-black transition-opacity outline-none text-xl bg-red-800 text-white flex m-auto ">Others Photo</button>
                 </div>
             </div>
         </section>

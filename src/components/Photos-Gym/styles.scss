@@ -1,28 +1,54 @@
 #photos {
+  position: relative;
+
+  .modal {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background: rgba(0, 0, 0, 0.6);
+
+    img {
+      border-radius: 8px;
+      width: 50%;
+    }
+  }
+
   .photos {
-    img{
+
+    img {
       border-radius: 10px;
     }
+
     .card {
       width: 200px;
       height: 250px;
       perspective: 400px;
 
     }
+
     .card img {
       width: 100%;
       backdrop-filter: blur(5px);
       background: rgba(0, 0, 0, 0.56);
     }
+
     .card__inner {
       position: relative;
       height: 100%;
       transform-style: preserve-3d;
       transition: transform 0.5s;
     }
+
     .card:hover .card__inner {
       transform: rotateY(-180deg);
     }
+
     .card__body {
       display: flex;
       justify-content: space-between;
@@ -30,18 +56,21 @@
       padding: 10px 20px;
       cursor: pointer;
 
+      h2 {
+        color: #0c0c0c;
+        font-weight: 600;
+      }
     }
+
     .card__side {
       position: absolute;
       inset: 0;
       background-color: #FFFFFF;
-      //display: grid;
-      //grid-template-rows: 180px 1fr;
       backface-visibility: hidden;
-      //box-shadow: 0 5px 10px
-      //rgba(0, 0, 0, 0.15);
       border-radius: 10px;
+      cursor: pointer;
     }
+
     .card__side--back {
       transform: rotateY(180deg);
     }
@@ -51,16 +80,18 @@
 @media (max-width: 472px) {
   #photos {
     .photos {
-      &__block{
+      &__block {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
       }
+
       .card {
         gap: 30px;
         width: 100%;
       }
+
       img {
         height: 30vh;
         object-fit: cover;
