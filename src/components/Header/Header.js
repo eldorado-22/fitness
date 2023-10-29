@@ -1,12 +1,14 @@
 import React, {useEffect, useState} from 'react';
 import "./style.scss";
 import {Link} from "react-router-dom";
+import {MdOutlineKeyboardArrowDown} from "react-icons/md";
 // import BurgerMenu from "../Burger-Menu/menu";
 
 const Header = () => {
-
+    const accObj = JSON.parse(localStorage.getItem('tranAcc')) || {inAcc: false}
     const [scroll, setScroll] = useState(false)
     // const [burger, setBurger] = useState(false)
+    const [accInd,setAccInd] = useState(false)
 
     const toScroll = () => {
         setScroll(window.scrollY)
@@ -15,6 +17,10 @@ const Header = () => {
     useEffect(() => {
         window.addEventListener('scroll', toScroll)
     })
+
+    function logOut(){
+        localStorage.setItem('tranAcc', JSON.stringify({inAcc: false}))
+    }
 
     return (
         <header style={{
@@ -46,9 +52,24 @@ const Header = () => {
                         <Link to={"/trainer"}>
                             <a href="#" className="px-8 text-xl text-amber-50">Trainer</a>
                         </Link>
-                        <Link to={"/registration"}>
-                            <a href="#" className="text text-xl text-amber-50">Registration</a>
-                        </Link>
+                        {
+                            accObj.inAcc?
+                                <div className='acc'>
+                                    <p onClick={()=> setAccInd(!accInd)} className="text-teal-200">{
+                                        accObj.name
+                                    }
+                                    <span><MdOutlineKeyboardArrowDown></MdOutlineKeyboardArrowDown></span>
+                                    </p>
+                                    <div onClick={()=> logOut()} style={{height: accInd? '': '0'}}>
+                                        <h3>sign out</h3>
+                                    </div>
+                                </div>
+                                :
+                                <Link to={"/registration"} className="text text-xl text-amber-500">
+                                    Registration
+                                </Link>
+
+                        }
                     </nav>
                 </div>
                 <div className="burger ">

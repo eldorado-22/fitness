@@ -2,27 +2,21 @@
 
 #bas {
   margin: 20px 0;
-
   .bas {
     &--text {
       @include titlesTwo;
     }
-
     &--group {
-      //position: relative;
       display: flex;
       align-items: center;
       justify-content: center;
       gap: 40px;
-
       &__first {
         position: relative;
         transition: .5s;
-
         .ones {
           position: relative;
         }
-
         .two {
           transition: .5s;
           opacity: 0;
@@ -36,9 +30,7 @@
             color: white;
             text-shadow: 1px 1px 1px red;
           }
-
         }
-
         &:hover {
           .two {
             opacity: 1;
@@ -58,18 +50,15 @@
             opacity: 1;
           }
         }
-
         .ones {
           #img {
             @include pool_position;
             background: #000;
           }
         }
-
         &--phone {
           transition: .5s;
           opacity: 1;
-
           &:hover {
             opacity: 0;
           }
@@ -92,10 +81,8 @@
             top: 28vh;
             font-size: 24px;
             transition: .3s;
-
             .inst {
               transition: .5s;
-
               &:hover {
                 cursor: pointer;
                 color: rgba(255, 0, 0, 0.87);
@@ -112,22 +99,26 @@
             }
             .link{
               transition: .5s;
-
               &:hover {
                 cursor: pointer;
                 color: rgba(16, 87, 245, 0.87);
               }
             }
-
           }
-
-
-
-
-
         }
       }
-
+    }
+    &--btn{
+      display: grid;
+      place-items: center;
+      margin: 30px 0;
+      &__click{
+        padding: 10px 30px;
+        background: #d91212;
+        border-radius: 8px;
+        color: white;
+        font-weight: 600;
+      }
     }
   }
 }

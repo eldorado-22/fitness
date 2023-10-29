@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./style.scss";
 import "./../../../components/Photos-Gym/styles.scss"
 import photoSix from "../../../assets/images/gallery6.jpg";
@@ -13,311 +13,93 @@ import photoFour from "../../../assets/images/gallery4.jpg";
 import photoFive from "../../../assets/images/gallery5.jpg";
 
 const AboutPhotoGYM = () => {
-    return (
-        <div id="photos">
-            <div className="container">
-                <h1 className="text-red-700 text-6xl text-center font-extrabold pb-10">Photos <span className="font-bold text-red-700 py-3">GYM</span></h1>
-                <div className="photos py-3">
-                    <div className=" flex  justify-between items-center">
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    <img className="card__image" src={photoSix} alt="img"/>
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    <img className="card__image" src={photoEleven} alt="img"/>
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    <img className="card__image" src={photoEight} alt="img"/>
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    <img className="card__image" src={photoNine} alt="img"/>
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    <img className="card__image" src={photoTen} alt="img"/>
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="flex py-7  justify-between items-center">
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoOne} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoTwo} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoThree} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoFour} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoFive} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
-                    <div className="flex    justify-between items-center">
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoOne} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoTwo} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoThree} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoFour} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                        <article className="card">
-                            <div className="card__inner">
-                                <div className="card__side card__side--front">
-                                    {/*<div className="card__image-wrapper">*/}
-                                    <img className="card__image" src={photoFive} alt="img"/>
-                                    {/*</div>*/}
-                                    <div className="card__body card__body--flex">
-                                        <h2 className="card__title">Eldar JM</h2>
-                                        <span className="card__arrow">&rarr;</span>
-                                    </div>
-                                </div>
-                                <div className="card__side card__side--back">
-                                    <div className="card__body">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores neque
-                                            repellat
-                                            voluptates.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </article>
-                    </div>
+    const [modal, setModal] = useState(false)
+    const [modalImg, setModalImg] = useState('')
 
+    const handleOpen = () => {
+        setModal(true)
+    }
+    const handleClose = () => {
+        setModal(false)
+    }
+    const arr = [
+        {
+            img: photoSix
+        },
+        {
+            img: photoEleven
+        },
+        {
+            img: photoEight
+        },
+        {
+            img: photoNine
+        },
+        {
+            img: photoTen
+        },
+        {
+            img: photoOne
+        },
+        {
+            img: photoTwo
+        },
+        {
+            img: photoThree
+        },
+        {
+            img: photoFour
+        },
+        {
+            img: photoEleven
+        },
+    ]
+
+    return (
+        <>
+            <section id="photos">
+                {
+                    modal ? <div onClick={handleClose} className="modal">
+                        <img src={modalImg} alt="img"/>
+                    </div> : ""
+                }
+                <div className="container">
+                    <h1 className="text-red-700 text-6xl text-center font-extrabold pb-10">Photos <span
+                        className="font-bold text-red-700 py-3">GYM</span></h1>
+                    <div className="photos py-3">
+                        <div className=" flex  justify-between items-center flex-wrap gap-10">
+                            {
+                                arr.map(el => (
+                                    <article onClick={() => {
+                                        handleOpen();
+                                        setModalImg(el.img)
+                                    }} className="card">
+                                        <div className="card__inner">
+                                            <div className="card__side card__side--front">
+                                                <img className="card__image" src={el.img}
+                                                     alt="img"/>
+                                                <div className="card__body card__body--flex">
+                                                    <h2 className="card__title">Read More...</h2>
+                                                    <span className="card__arrow">&rarr;</span>
+                                                </div>
+                                            </div>
+                                            <div className="card__side card__side--back">
+                                                <div className="card__body">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                                        Assumenda corporis doloribus eligendi eveniet expedita fugiat
+                                                        laboriosam molestiae porro quia voluptatem!
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </article>
+                                ))
+                            }
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
+            </section>
+        </>
     );
 };
 

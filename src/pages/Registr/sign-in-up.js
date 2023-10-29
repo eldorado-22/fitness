@@ -10,7 +10,7 @@ const Form = () => {
 
     // useState()
     const [name, setName] = useState('')
-    const [nameError , setNameError] = useState("Name не может быть пустым")
+    const [nameError, setNameError] = useState("Name не может быть пустым")
     const [nameDirty, setNameDirty] = useState(false)
     const [notVal, setNotVal] = useState(false)
     const [email, setEmail] = useState('')
@@ -22,8 +22,9 @@ const Form = () => {
 
     // ADD_ACCOUNT
     const addAccount = (obj) => {
-        dispatch({type: 'ADD_ACCOUNT', payload: obj})
-        navigate('/sucReg')
+        let acc = JSON.parse(localStorage.getItem('tranAcc')) || {}
+        localStorage.setItem('tranAcc', JSON.stringify(obj))
+        navigate('/')
     }
     // NEW ACCOUNT
     const newAcc = {
@@ -59,12 +60,12 @@ const Form = () => {
     // NAME
     const nameHandler = (e) => {
         setName(e.target.value)
-        if(e.target.value.length < 4 || e.target.value.length > 20){
+        if (e.target.value.length < 4 || e.target.value.length > 20) {
             setNameError("Имя должен быть длиннее 4 и меньше 50")
-            if(!e.target.value) {
+            if (!e.target.value) {
                 setNameError("Name не может быть пустым")
             }
-        }else{
+        } else {
             setNameError("")
         }
     }
@@ -83,66 +84,66 @@ const Form = () => {
         }
     }
     return (
-       <>
-           <section id='signUp'>
-               <div className="container">
-                   <div className="signUp">
-                       <div className="signUp--form py-20">
-                           <form className="signUp--form__search">
-                               <h1>Registration</h1>
+        <>
+            <section id='signUp'>
+                <div className="container">
+                    <div className="signUp">
+                        <div className="signUp--form py-20">
+                            <form className="signUp--form__search">
+                                <h1>Registration</h1>
 
-                               <div className="search">
-                                   {(nameDirty && nameDirty) && <div style={{
-                                       color: "red"
-                                   }}>{nameError}</div>}
-                                   <input style={{
-                                       border: nameDirty && password === "" ? "1px solid red" : "",
-                                       outline: nameDirty && password === "" ? "1px solid red" : "",
-                                   }} onChange={e => nameHandler(e)}
-                                          type="text" name="name" placeholder="Enter you name..."
-                                          value={name}
-                                          onBlur={e => blurHandler(e)}
-                                   />
-                                   <h4 className="emails">
-                                       {(emailDirty && emailError) && <div style={{
-                                           color: "red"
-                                       }}>{emailError}</div>}
-                                   </h4>
-                                   <input style={{
-                                       border: emailDirty && password === "" ? "1px solid red" : "",
-                                       outline: emailDirty && password === "" ? "1px solid red" : "",
-                                   }} onChange={e => emailHandler(e)}
-                                          value={email}
-                                          onBlur={e => blurHandler(e)}
-                                          type="email" name="email"
-                                          placeholder="Enter you email..."/>
-                                   <h4 className="emails">
-                                       {(passwordError && passwordDirty) && <div style={{
-                                           color: "red"
-                                       }}>{passwordError}</div>}
-                                   </h4>
-                                   <input style={{
-                                       border: passwordDirty && email === "" ? "1px solid red" : "",
-                                       outline: passwordDirty && email === "" ? "1px solid red" : ""
-                                   }} onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)}
-                                          type="password" name="password"
-                                          placeholder="Enter you password..."/>
-                                   <button onChange={e => emailHandler(e)} type="submit">Registration</button>
-                               </div>
-                           </form>
-                       </div>
+                                <div className="search">
+                                    {(nameDirty && nameDirty) && <div style={{
+                                        color: "red"
+                                    }}>{nameError}</div>}
+                                    <input style={{
+                                        border: nameDirty && password === "" ? "1px solid red" : "",
+                                        outline: nameDirty && password === "" ? "1px solid red" : "",
+                                    }} onChange={e => nameHandler(e)}
+                                           type="text" name="name" placeholder="Enter you name..."
+                                           value={name}
+                                           onBlur={e => blurHandler(e)}
+                                    />
+                                    <h4 className="emails">
+                                        {(emailDirty && emailError) && <div style={{
+                                            color: "red"
+                                        }}>{emailError}</div>}
+                                    </h4>
+                                    <input style={{
+                                        border: emailDirty && password === "" ? "1px solid red" : "",
+                                        outline: emailDirty && password === "" ? "1px solid red" : "",
+                                    }} onChange={e => emailHandler(e)}
+                                           value={email}
+                                           onBlur={e => blurHandler(e)}
+                                           type="email" name="email"
+                                           placeholder="Enter you email..."/>
+                                    <h4 className="emails">
+                                        {(passwordError && passwordDirty) && <div style={{
+                                            color: "red"
+                                        }}>{passwordError}</div>}
+                                    </h4>
+                                    <input style={{
+                                        border: passwordDirty && email === "" ? "1px solid red" : "",
+                                        outline: passwordDirty && email === "" ? "1px solid red" : ""
+                                    }} onChange={e => passwordHandler(e)} value={password} onBlur={e => blurHandler(e)}
+                                           type="password" name="password"
+                                           placeholder="Enter you password..."/>
 
-                       <Link to={"/"}>
-                           <button onClick={() => name !== '' && email !== '' && password !== '' ?
-                               addAccount(newAcc) : setNotVal(true)}> Continue
-                           </button>
-                       </Link>
+                                        <button onClick={() => name !== '' && email !== '' && password !== '' ?
+                                            addAccount(newAcc) : setNotVal(true)} onChange={e => emailHandler(e)}
+                                                type="submit">
+                                            Registration
+                                        </button>
+
+                                </div>
+                            </form>
+                        </div>
 
 
-                   </div>
-               </div>
-           </section>
-       </>
+                    </div>
+                </div>
+            </section>
+        </>
     );
 };
 

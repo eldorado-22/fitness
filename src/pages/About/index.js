@@ -6,7 +6,8 @@ import FitnessInformation from "./Fitness-Information";
 import Contact from "./Contact/Contact";
 
 const AboutUS = () => {
-    window.scroll(0,0)
+    window.scroll(100,0)
+
     return (
         <div>
             <About/>
