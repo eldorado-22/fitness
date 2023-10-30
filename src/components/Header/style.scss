@@ -1,19 +1,24 @@
 #header {
   .header {
+    position: relative;
     &--nav {
       a {
-        margin: 0 22px;
+        margin: 0 40px;
+        font-weight: 600;
       }
-
+      .active{
+        color: red;
+      }
       .acc {
         position: relative;
         display: flex;
         align-items: center;
-        p{
+        p {
           display: flex;
           align-items: center;
           cursor: pointer;
-          span{
+
+          span {
             font-size: 30px;
           }
         }
@@ -21,7 +26,7 @@
           position: absolute;
           overflow: hidden;
           top: 30px;
-          width: 90px;
+          width: 40px;
           height: 40px;
           display: flex;
           align-items: center;
@@ -36,18 +41,60 @@
       }
     }
   }
-
-  .burger {
-    display: none;
+}
+// Burger Menu
+.label{
+  display: flex;
+  justify-content: end;
+  a{
+    padding: 20px 0;
   }
+}
+.exit{
+  color: white;
+  font-size: 70px;
+  position: absolute;
+  z-index: 999;
+  right: 60px;
+  cursor: pointer;
+  //transform: translate(-1000px);
+}
 
-  .burger-item {
-    width: 30px;
-    height: 3px;
-    background: #fff;
-    margin: 6px 0;
-    transition: .5s;
+.menu-bos {
+  //display: none;
+  width: 40%;
+  height: 100vh;
+  margin: 0 0 0 0;
+  z-index: 999;
+  top: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.78);
+  position: absolute;
+  backdrop-filter: blur(5px);
+  img {
+    width: 40%;
+    padding: 20px 0;
   }
+}
+
+.menu{
+  display: grid;
+  place-items: center;
+  margin: 20px 0;
+}
+
+.burger {
+  //display: none;
+  cursor: pointer;
+  transform: translate(0);
+}
+
+.burger-item {
+  width: 30px;
+  height: 3.40px;
+  background: #fff;
+  margin: 6px 0;
+  transition: .5s;
 }
 
 
@@ -64,7 +111,7 @@
   #header {
     .header {
       img {
-        display: none;
+        //display: none;
       }
     }
   }
@@ -78,7 +125,7 @@
 
     .burger {
       display: block;
-      right: 20px;
+      right: 47px;
       top: 20px;
       position: absolute;
     }
@@ -90,7 +137,7 @@
         width: 17%;
         display: block;
         position: absolute;
-        top: 15%;
+        top: 13%;
         left: 0;
       }
 
@@ -118,10 +165,9 @@
 @media (max-width: 769px) {
   #header {
 
-
     .header {
       img {
-        //width: 15%;
+        width: 10%;
         display: none;
       }
 

@@ -7,19 +7,22 @@ import Pool from "./pages/Pool/pool";
 import Trainer from "./pages/Tarainer/trainer";
 import Services from "./pages/Services/services";
 import AboutUS from "./pages/About";
-import Form from "./pages/Registr/sign-in-up";
+import {useState} from "react";
+
 
 function App() {
+    const [burger, setBurger] = useState(false)
+
     return (
         <>
-            <Header/>
+            <Header setBurger={setBurger} burger={burger}/>
             <Routes>
                 <Route path={"/"} element={<Home/>}/>
                 <Route path={"/about"} element={<AboutUS/>}/>
                 <Route path={"/pool"} element={<Pool/>}/>
                 <Route path={"/services"} element={<Services/>}/>
                 <Route path={"/trainer"} element={<Trainer/>}/>
-                <Route path={"/registration"} element={<Form/>}/>
+                {/*<Route path={"/registration"} element={<Form/>}/>*/}
             </Routes>
             <Footer/>
         </>

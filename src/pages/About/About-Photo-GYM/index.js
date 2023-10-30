@@ -10,7 +10,7 @@ import photoOne from "../../../assets/images/gallery1.jpg";
 import photoTwo from "../../../assets/images/gallery2.jpg";
 import photoThree from "../../../assets/images/gallery3.jpg";
 import photoFour from "../../../assets/images/gallery4.jpg";
-import photoFive from "../../../assets/images/gallery5.jpg";
+// import photoFive from "../../../assets/images/gallery5.jpg";
 
 const AboutPhotoGYM = () => {
     const [modal, setModal] = useState(false)
