@@ -10,19 +10,15 @@
     width: 92%;
     margin: 0 auto;
 }
-
 body {
     font-family: 'Syne', sans-serif;
     background: #000;
 }
-
-
 a {
     text-decoration: none;
 }
-
 #header {
-    padding: 15px 0;
+    /*padding: 15px 0;*/
     position: fixed;
     z-index: 999;
     width: 100%;
