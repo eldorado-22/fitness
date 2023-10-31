@@ -22,7 +22,6 @@ function App() {
                 <Route path={"/pool"} element={<Pool/>}/>
                 <Route path={"/services"} element={<Services/>}/>
                 <Route path={"/trainer"} element={<Trainer/>}/>
-                {/*<Route path={"/registration"} element={<Form/>}/>*/}
             </Routes>
             <Footer/>
         </>
