@@ -57,11 +57,9 @@
   z-index: 999;
   right: 60px;
   cursor: pointer;
-  //transform: translate(-1000px);
 }
 
 .menu-bos {
-  //display: none;
   width: 40%;
   height: 100vh;
   margin: 0 0 0 0;
@@ -84,7 +82,7 @@
 }
 
 .burger {
-  //display: none;
+  display: none;
   cursor: pointer;
   transform: translate(0);
 }
@@ -125,16 +123,16 @@
 
     .burger {
       display: block;
-      right: 47px;
+      right: 0  ;
       top: 20px;
       position: absolute;
     }
 
     .header {
-      padding: 30px 0;
+      padding: 40px 0;
 
       img {
-        width: 17%;
+        width: 20%;
         display: block;
         position: absolute;
         top: 13%;
@@ -149,7 +147,7 @@
         position: absolute;
         top: 0;
         right: 0;
-        background: rgba(0, 0, 0, 0.72);
+        //background: rgba(0, 0, 0, 0.72);
         padding: 100px 100px 70px 100px;
         transform: translateX(100%);
         backdrop-filter: blur(5px);

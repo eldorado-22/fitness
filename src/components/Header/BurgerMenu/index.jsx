@@ -5,10 +5,6 @@ import "./../style.scss"
 const BurgerMenu = ({ setBurger}) => {
 
 
-    // const handleClose = () => {
-    //     setBurger(false)
-    // }
-
     return (
         <>
             <div className="container">
