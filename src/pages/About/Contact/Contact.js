@@ -6,7 +6,7 @@ import {IoPhonePortrait} from "react-icons/io5";
 
 const Contact = () => {
     return (
-        <section id="contact" className="py-10">
+        <section id="contact" className="py-20 my-20" >
             <div className="container">
                 <div className="contact">
                     <h1 className="text-center text-5xl pb-10  font-extrabold">Our

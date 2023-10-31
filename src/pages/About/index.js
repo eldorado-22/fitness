@@ -13,7 +13,6 @@ const AboutUS = () => {
             <About/>
             <Text/>
             <AboutPhotoGYM/>
-            <FitnessInformation/>
             <Contact/>
         </div>
     );
