@@ -4,6 +4,7 @@ import {BsFacebook, BsInstagram, BsLinkedin} from "react-icons/bs";
 import imgOne from "./../../../assets/images/pool_img_1.jpg"
 import imgTwo from "./../../../assets/images/pool_img_2.jpg"
 import imgFour from "./../../../assets/images/pool_img_3.jpg"
+import {IoIosArrowDown} from "react-icons/io";
 
 const Pool_Bas = () => {
     const [group,setGroup] = useState(false)
@@ -34,7 +35,6 @@ const Pool_Bas = () => {
                                 </div>
                                 <span className="text-amber-50 text-9xl relative top-32">"</span>
                             </div>
-
                         </div>
                         <div className="bas--group">
                             <div className="bas--group__first">
@@ -141,112 +141,114 @@ const Pool_Bas = () => {
                             </div>
                         </div>
                         <div style={{marginTop: '40px', display: group? '': 'none'}} className="bas--group">
-                            <div className="bas--group__first">
-                                <div className="ones">
-                                    <img id="img" src={imgOne} alt="img"/>
-                                    <div className="bas--group__first--phone">
-                                        <h4>Photo One</h4>
+                            <div className="blocks">
+                                <div className="bas--group__first">
+                                    <div className="ones">
+                                        <img id="img" src={imgOne} alt="img"/>
+                                        <div className="bas--group__first--phone">
+                                            <h4>Photo One</h4>
+                                            <div className="bas--group__first--phone__socials">
+                                                <BsInstagram/>
+                                                <BsFacebook/>
+                                                <BsLinkedin/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div className="two-group">
+                                        <div className="two">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
+                                                aliquam
+                                                amet assumenda atque autem commodi dicta ducimus eaque eligendi enim illo
+                                                inventore, iste magnam mollitia nesciunt non odio odit officiis perferendis
+                                                placeat quasi qui quis quos recusandae sit vel?
+                                            </p>
+                                        </div>
                                         <div className="bas--group__first--phone__socials">
-                                            <BsInstagram/>
-                                            <BsFacebook/>
-                                            <BsLinkedin/>
+                                            <a href="https://www.instagram.com/eldar_jumashevv/" target="_blank">
+                                                <BsInstagram className="inst"/>
+                                            </a>
+                                            <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank">
+                                                <BsFacebook className="face"/>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/eldar-jumashevv-51a792259/" target="_blank">
+                                                <BsLinkedin className="link"/>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="two-group">
-                                    <div className="two">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
-                                            aliquam
-                                            amet assumenda atque autem commodi dicta ducimus eaque eligendi enim illo
-                                            inventore, iste magnam mollitia nesciunt non odio odit officiis perferendis
-                                            placeat quasi qui quis quos recusandae sit vel?
-                                        </p>
+                                <div className="bas--group__first">
+                                    <div className="ones">
+                                        <img id="img" src={imgTwo} alt="img"/>
+                                        <div className="bas--group__first--phone">
+                                            <h4>Photo Two</h4>
+                                            <div className="bas--group__first--phone__socials">
+                                                <BsInstagram/>
+                                                <BsFacebook/>
+                                                <BsLinkedin/>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div className="bas--group__first--phone__socials">
-                                        <a href="https://www.instagram.com/eldar_jumashevv/" target="_blank">
-                                            <BsInstagram className="inst"/>
-                                        </a>
-                                        <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank">
-                                            <BsFacebook className="face"/>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/eldar-jumashevv-51a792259/" target="_blank">
-                                            <BsLinkedin className="link"/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bas--group__first">
-                                <div className="ones">
-                                    <img id="img" src={imgTwo} alt="img"/>
-                                    <div className="bas--group__first--phone">
-                                        <h4>Photo Two</h4>
+                                    <div className="two-group">
+                                        <div className="two">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
+                                                aliquam
+                                                amet assumenda atque autem commodi dicta ducimus eaque eligendi enim illo
+                                                inventore, iste magnam mollitia nesciunt non odio odit officiis perferendis
+                                                placeat quasi qui quis quos recusandae sit vel?
+                                            </p>
+                                        </div>
                                         <div className="bas--group__first--phone__socials">
-                                            <BsInstagram/>
-                                            <BsFacebook/>
-                                            <BsLinkedin/>
+                                            <a href="https://www.instagram.com/eldar_jumashevv/" target="_blank">
+                                                <BsInstagram className="inst"/>
+                                            </a>
+                                            <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank">
+                                                <BsFacebook className="face"/>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/eldar-jumashevv-51a792259/" target="_blank">
+                                                <BsLinkedin className="link"/>
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div className="two-group">
-                                    <div className="two">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
-                                            aliquam
-                                            amet assumenda atque autem commodi dicta ducimus eaque eligendi enim illo
-                                            inventore, iste magnam mollitia nesciunt non odio odit officiis perferendis
-                                            placeat quasi qui quis quos recusandae sit vel?
-                                        </p>
-                                    </div>
-                                    <div className="bas--group__first--phone__socials">
-                                        <a href="https://www.instagram.com/eldar_jumashevv/" target="_blank">
-                                            <BsInstagram className="inst"/>
-                                        </a>
-                                        <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank">
-                                            <BsFacebook className="face"/>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/eldar-jumashevv-51a792259/" target="_blank">
-                                            <BsLinkedin className="link"/>
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="bas--group__first">
-                                <div className="ones">
-                                    <img id="img" src={imgFour} alt="img"/>
-                                    <div className="bas--group__first--phone">
-                                        <h4>Photo Three</h4>
-                                        <div className="bas--group__first--phone__socials">
-                                            <BsInstagram/>
-                                            <BsFacebook/>
-                                            <BsLinkedin/>
+                                <div className="bas--group__first">
+                                    <div className="ones">
+                                        <img id="img" src={imgFour} alt="img"/>
+                                        <div className="bas--group__first--phone">
+                                            <h4>Photo Three</h4>
+                                            <div className="bas--group__first--phone__socials">
+                                                <BsInstagram/>
+                                                <BsFacebook/>
+                                                <BsLinkedin/>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div className="two-group">
-                                    <div className="two">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
-                                            aliquam
-                                            amet assumenda atque autem commodi dicta ducimus eaque eligendi enim illo
-                                            inventore, iste magnam mollitia nesciunt non odio odit officiis perferendis
-                                            placeat quasi qui quis quos recusandae sit vel?
-                                        </p>
-                                    </div>
-                                    <div className="bas--group__first--phone__socials">
-                                        <a href="https://www.instagram.com/eldar_jumashevv/" target="_blank">
-                                            <BsInstagram className="inst"/>
-                                        </a>
-                                        <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank">
-                                            <BsFacebook className="face"/>
-                                        </a>
-                                        <a href="https://www.linkedin.com/in/eldar-jumashevv-51a792259/" target="_blank">
-                                            <BsLinkedin className="link"/>
-                                        </a>
+                                    <div className="two-group">
+                                        <div className="two">
+                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium
+                                                aliquam
+                                                amet assumenda atque autem commodi dicta ducimus eaque eligendi enim illo
+                                                inventore, iste magnam mollitia nesciunt non odio odit officiis perferendis
+                                                placeat quasi qui quis quos recusandae sit vel?
+                                            </p>
+                                        </div>
+                                        <div className="bas--group__first--phone__socials">
+                                            <a href="https://www.instagram.com/eldar_jumashevv/" target="_blank">
+                                                <BsInstagram className="inst"/>
+                                            </a>
+                                            <a href="https://www.facebook.com/eldoradojumashevv/" target="_blank">
+                                                <BsFacebook className="face"/>
+                                            </a>
+                                            <a href="https://www.linkedin.com/in/eldar-jumashevv-51a792259/" target="_blank">
+                                                <BsLinkedin className="link"/>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div className="bas--btn">
                             <button onClick={()=> setGroup(!group)} className="bas--btn__click">
-                                Other Photo
+                                <IoIosArrowDown/>
                             </button>
                         </div>
 
