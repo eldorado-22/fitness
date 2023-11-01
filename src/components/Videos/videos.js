@@ -31,10 +31,6 @@ const Videos = () => {
                           </div>
                         </a>
                     </div>
-
-                    <div className="frame">
-                        <button className="btn">Hover</button>
-                    </div>
                 </div>
             </div>
         </section>
