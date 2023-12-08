@@ -1,9 +1,0 @@
-.demoForm {
-    width: 500px;
-    margin: auto ;
-    padding-top: 100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    color: white;
-}
