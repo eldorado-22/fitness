@@ -7,8 +7,8 @@ const About = () => {
             <div className="container">
                 <div className="about">
                     <h1 className="text-gray-50 text-6xl font-extrabold text-center pt-[18%]">
-                        About
-                        <span className="font-bold text-red-700">
+                        About <br/>
+                        <span className="font-extrabold text-red-700">
                             Fitness GYM
                         </span>
                     </h1>

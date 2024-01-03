@@ -1,10 +1,11 @@
 import React from 'react';
+import TrainHero from "./Train_Hero/hero";
 
 const Trainer = () => {
     return (
-        <div>
-
-        </div>
+        <>
+            <TrainHero/>
+        </>
     );
 };
 
