@@ -1,16 +1,17 @@
 import React from 'react';
 import "./style.scss";
 
-const HeroPool = () => {
-
+const TrainHero = () => {
     return (
         <>
-            <section id="pool">
+            <section id="trainer_hero">
                 <div className="container">
-                    <div className="pool">
+                    <div className="trainer_hero">
                         <h1 className="text-gray-50 text-6xl font-extrabold text-center pt-[18%]">
-                            Swimming
-                            <span className="font-extrabold text-red-700"> Pool</span>
+                            Trainer
+                            <span className="font-extrabold text-red-700">
+                              GYM
+                        </span>
                         </h1>
                     </div>
                 </div>
@@ -19,4 +20,4 @@ const HeroPool = () => {
     );
 };
 
-export default HeroPool;
+export default TrainHero;
