@@ -1,0 +1,17 @@
+@import "./../../../styles/mixin";
+#category {
+  padding: 60px 0;
+  .category {
+    h1 {
+      //@include titles;
+      -webkit-text-stroke-width: 2px;
+      -webkit-text-stroke-color: #000000;
+    }
+
+    span {
+      padding-left: 20px;
+      -webkit-text-stroke-width: 0;
+
+    }
+  }
+}
