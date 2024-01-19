@@ -4,8 +4,17 @@ import gymWoman from "./../../assets/images/service-1.jpg"
 import man from "./../../assets/images/train.jpg"
 import service from "./../../assets/images/service-3.jpg"
 import services from "./../../assets/images/service-4.jpg"
+import {useNavigate} from "react-router-dom";
 
 const Gallery = () => {
+    const navigate = useNavigate()
+
+    function goToTrainer(){
+        navigate('/trainer')
+        setTimeout(()=> {
+            window.scroll(0,520)
+        },50)
+    }
     return (
         <section id="gallery" className="">
                 <div className="gallery flex flex-wrap items-center justify-center">
@@ -30,6 +39,13 @@ const Gallery = () => {
                         <div className="gallery--service1__block"></div>
                     </div>
                 </div>
+            <div className="gallery--btn mt-10">
+                <button onClick={()=> goToTrainer()}
+                        className="rounded-full ... p-3 hover:bg-white hover:text-black transition-opacity outline-none text-xl bg-red-800 text-white flex m-auto ">
+                    Others Trainer
+                </button>
+            </div>
+
         </section>
     );
 };
